@@ -4,39 +4,31 @@ echo ---------------------------------------------------------------------------
 echo ------------------------------------MENU-------------------------------------
 echo -----------------------------------------------------------------------------
 
-echo 1_ statsWords
-echo 2_ statsUsageWords
-echo 3_ findNames
-echo 4_ statsSentences
-echo 5_ blankLinesCounter
-echo 6_ caseConverter
-echo 7_ substringReplace
-echo 8_ blockSelection
-echo 9_ palindromeDetection
 
 PS3="Please select the script to run: "
 SCRIPTS=("statsWords" "statsUsageWords" "findNames" "statsSentences" "blankLinesCounter" "caseConverter" "substringReplace" "blockSelection" "palindromeDetection")
+NUMS=("1" "2" "3" "4" "5" "6" "7" "8" "9")
 
 select scr in  "${SCRIPTS[@]}" Quit
 do
-    case $scr in
-        "1")
+    case  $scr in
+        "statsWords")
            echo "$scr - is statsWords";;
-        "2")
+        "statsUsageWords")
            echo "$scr - is statsUsageWords";;
-        "3")
+        "findNames")
            echo "$scr - is findNames";;
-   	"4")
+   	"statsSentences")
 	   echo "$scr - is statsSentences";;
-	"5")
+	"blankLinesCounter")
            echo "$scr - is blankLinesCounter";;
-	"6")
+	"caseConverter")
 	   echo "$scr - is caseConverter";;
-	"7")
+	"substringReplace")
 	   echo "$scr - is substringReplace";;
-	"8")
+	"blockSelection")
            echo "$scr - is blockSelection";;
-	"9")
+	"palindromeDetection")
 	   echo "$scr - is palindromeDetection";;
    	"Quit")
            echo "We're done"

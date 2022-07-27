@@ -7,7 +7,6 @@ echo ---------------------------------------------------------------------------
 
 PS3="Please select the script to run: "
 SCRIPTS=("statsWords" "statsUsageWords" "findNames" "statsSentences" "blankLinesCounter" "caseConverter" "substringReplace" "blockSelection" "palindromeDetection")
-NUMS=("1" "2" "3" "4" "5" "6" "7" "8" "9")
 
 select scr in  "${SCRIPTS[@]}" Quit
 do

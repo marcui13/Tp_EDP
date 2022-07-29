@@ -18,7 +18,8 @@ do
         "statsUsageWords")
            echo "$scr - is statsUsageWords";;
         "findNames")
-           echo "$scr - is findNames";;
+           ./findNames.sh lorem.txt
+	   ;;
    	"statsSentences")
 	   echo "$scr - is statsSentences";;
 	"blankLinesCounter")

@@ -20,7 +20,8 @@ do
    	"statsSentences")
 	   echo "$scr - is statsSentences";;
 	"blankLinesCounter")
-           echo "$scr - is blankLinesCounter";;
+           ./blankLinesCounter.sh lorem.txt
+	   ;;
 	"caseConverter")
 	   echo "$scr - is caseConverter";;
 	"substringReplace")
@@ -28,7 +29,12 @@ do
 	"blockSelection")
            echo "$scr - is blockSelection";;
 	"palindromeDetection")
-	   echo "$scr - is palindromeDetection";;
+  	   PAL="ingrese la palabra a analizar: "
+           echo $PAL
+           read PAL
+           ./palindromeDetection.sh $PAL
+           ;;
+
    	"Quit")
            echo "We're done"
            break;;

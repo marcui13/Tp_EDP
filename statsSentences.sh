@@ -61,7 +61,7 @@ done
 
 let promedio=$suma/$cantidad
 
-echo "suma: $suma cantidad de longitudes: $cantidad"
+# "suma: $suma cantidad de longitudes: $cantidad"
 echo "El promedio de longitud es de $promedio palabra/s"
 echo "----------------------------------------------------------------------"
 

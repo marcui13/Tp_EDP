@@ -6,6 +6,7 @@ Este repositorio almacena los archivos y las instrucciones necesarias para ejecu
 
 ### Integrantes:
 MARQUARDT, Agustín
+
 SANTILLÁN, Ariel
 
 ## Objetivo

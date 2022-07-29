@@ -29,7 +29,11 @@ do
 	"blockSelection")
            echo "$scr - is blockSelection";;
 	"palindromeDetection")
-	   echo "$scr - is palindromeDetection";;
+	   PAL="ingrese la palabra a analizar: "
+           echo $PAL
+           read PAL
+           ./palindromeDetection.sh $PAL
+	   ;;
    	"Quit")
            echo "We're done"
            break;;

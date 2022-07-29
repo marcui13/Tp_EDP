@@ -31,12 +31,20 @@ do
 	"blockSelection")
            echo "$scr - is blockSelection";;
 	"palindromeDetection")
+<<<<<<< HEAD
   	   PAL="ingrese la palabra a analizar: "
            echo $PAL
            read PAL
            ./palindromeDetection.sh $PAL
            ;;
 
+=======
+	   PAL="ingrese la palabra a analizar: "
+           echo $PAL
+           read PAL
+           ./palindromeDetection.sh $PAL
+	   ;;
+>>>>>>> blankLinesCounter
    	"Quit")
            echo "We're done"
            break;;

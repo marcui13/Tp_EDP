@@ -20,7 +20,8 @@ do
    	"statsSentences")
 	   echo "$scr - is statsSentences";;
 	"blankLinesCounter")
-           echo "$scr - is blankLinesCounter";;
+           ./blankLinesCounter.sh lorem.txt
+	   ;;
 	"caseConverter")
 	   echo "$scr - is caseConverter";;
 	"substringReplace")

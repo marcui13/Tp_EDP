@@ -22,10 +22,10 @@ do
            #PAL="ingrese la palabra a analizar: "
            #echo $PAL
            #read PAL
-           ./findNames.sh $(cat lorem.txcat lorem.txt)
+           ./findNames.sh $(cat lorem.txt)
            ;;
    	"statsSentences")
-	   ./statsSentences.sh lorem.txt
+	   ./statsSentences.sh $(cat lorem.txt) 
 	   ;;
 	"blankLinesCounter")
            ./blankLinesCounter.sh lorem.txt

@@ -1,5 +1,4 @@
 #!/bin/bash
-INPUT=$(cat prueba.txt)
 
 PUNTO='([.]$)' #-----------------------termina en punto
 
@@ -7,7 +6,7 @@ oraciones=("Oracion numero 0!")  #-------lista con oraciones
 
 #-------construccion de lista con oraciones separadas e identificadas.
 
-for palabra in $INPUT;do
+for palabra in $1;do
 	declare -a acumulador
 	if ! [[ $palabra =~ $PUNTO ]];then
 		acumulador+="$palabra "
@@ -19,7 +18,7 @@ for palabra in $INPUT;do
 done
 
 #----------------------------------------------------------------------
-replace=$( tr "\n" "@" < prueba.txt ) #identifico cada salto de linea. 
+replace=$( tr "\n" "@" < lorem.txt ) #identifico cada salto de linea. 
 formating=("$(echo ${replace//@/ @ })")
 
 #--construccion de lista de oraciones separadas por parrafos-----------

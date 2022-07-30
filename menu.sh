@@ -18,11 +18,11 @@ do
         "statsUsageWords")
            echo "$scr - is statsUsageWords";;
         "findNames")
-           PAL="ingrese la palabra a analizar: "
-           echo $PAL
-           read PAL
-	   ./findNames.sh $PAL
-	   ;;
+           #PAL="ingrese la palabra a analizar: "
+           #echo $PAL
+           #read PAL
+           ./findNames.sh $(cat lorem.txcat lorem.txt)
+           ;;
    	"statsSentences")
 	   ./statsSentences.sh lorem.txt
 	   ;;

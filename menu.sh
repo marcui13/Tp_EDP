@@ -20,7 +20,8 @@ do
         "findNames")
            echo "$scr - is findNames";;
    	"statsSentences")
-	   echo "$scr - is statsSentences";;
+	   ./statsSentences.sh lorem.txt
+	   ;;
 	"blankLinesCounter")
            ./blankLinesCounter.sh lorem.txt
 	   ;;

@@ -14,13 +14,19 @@ select scr in  "${SCRIPTS[@]}" Quit
 do
     case  $scr in
         "statsWords")
-           echo "$scr - is statsWords";;
+	   ./statsWords.sh $(cat lorem.txt)
+	   ;;
         "statsUsageWords")
            echo "$scr - is statsUsageWords";;
         "findNames")
-           echo "$scr - is findNames";;
+           #PAL="ingrese la palabra a analizar: "
+           #echo $PAL
+           #read PAL
+           ./findNames.sh $(cat lorem.txt)
+           ;;
    	"statsSentences")
-	   echo "$scr - is statsSentences";;
+	   ./statsSentences.sh $(cat lorem.txt) 
+	   ;;
 	"blankLinesCounter")
            ./blankLinesCounter.sh lorem.txt
 	   ;;
@@ -43,4 +49,3 @@ do
            echo "Ooops";;
     esac
 done
-

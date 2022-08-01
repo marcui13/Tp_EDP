@@ -14,8 +14,6 @@ SANTILLÁN, Ariel
 Generar un contenedor que al ejecutarse presente un menú de
 opciones de filtrados de un texto dado, editando un Dockerfile y construyendo una imagen.
 
-## Elementos que intervienen en el trabajo
-
 
 ## Instrucciones para ejecutar la app
 

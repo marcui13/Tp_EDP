@@ -34,7 +34,14 @@ do
 	"caseConverter")
 	   echo "$scr - is caseConverter";;
 	"substringReplace")
-	   echo "$scr - is substringReplace";;
+	   CAD1="ingrese la sub-cadena1:"
+	   echo $CAD1
+	   read CAD1
+	   CAD2="ingrese la sub-cadena2:"
+           echo $CAD2
+           read CAD2
+	   ./substringReplace.sh $CAD1 $CAD2
+	   ;;
 	"blockSelection")
            echo "$scr - is blockSelection";;
 	"palindromeDetection")

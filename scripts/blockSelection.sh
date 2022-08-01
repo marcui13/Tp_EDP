@@ -1,12 +1,14 @@
 #!/bin/bash
 
+INPUT=$(cat lorem.txt)
+
 PUNTO='([.]$)' #-----------------------termina en punto
 
 oraciones=("Oracion numero 0!")  #-------lista con oraciones 
 
 #-------construccion de lista con oraciones separadas e identificadas.
 
-for palabra in $1;do
+for palabra in $INPUT;do
 	declare -a acumulador
 	if ! [[ $palabra =~ $PUNTO ]];then
 		acumulador+="$palabra "
@@ -19,6 +21,7 @@ done
 
 #----------------------------------------------------------------------
 replace=$( tr "\n" "@" < lorem.txt ) #identifico cada salto de linea. 
+
 formating=("$(echo ${replace//@/ @ })")
 
 #--construccion de lista de oraciones separadas por parrafos-----------

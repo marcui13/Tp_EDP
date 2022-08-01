@@ -17,7 +17,8 @@ do
 	   ./statsWords.sh $(cat lorem.txt)
 	   ;;
         "statsUsageWords")
-           echo "$scr - is statsUsageWords";;
+           ./statsUsageWords.sh
+	   ;;
         "findNames")
            #PAL="ingrese la palabra a analizar: "
            #echo $PAL

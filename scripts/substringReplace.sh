@@ -9,7 +9,7 @@ fi
 
 A=$1
 B=$2
-INPUT=$(cat hola.txt) 
+INPUT=$(cat lorem.txt) 
 
 OUTPUT=$(echo ${INPUT//$A/$B})
 

@@ -31,7 +31,7 @@ do
 	"substringReplace")
 	   echo "$scr - is substringReplace";;
 	"blockSelection")
-           ./blockSelection.sh $(cat lorem.txt)
+           ./blockSelection.sh 
 	   ;;
 	"palindromeDetection")
   	   PAL="ingrese la palabra a analizar: "

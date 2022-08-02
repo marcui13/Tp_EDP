@@ -40,7 +40,10 @@ do
            read CAD2
 	   ./substringReplace.sh $CAD1 $CAD2
 	   ;;
-	"palindromeDetection")
+        "blockSelection")
+	   ./blockSelection.sh
+	   ;;
+        "palindromeDetection")
   	   PAL="ingrese la palabra a analizar: "
            echo $PAL
            read PAL

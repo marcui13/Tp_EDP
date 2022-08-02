@@ -20,19 +20,17 @@ do
            ./statsUsageWords.sh
 	   ;;
         "findNames")
-           #PAL="ingrese la palabra a analizar: "
-           #echo $PAL
-           #read PAL
            ./findNames.sh $(cat lorem.txt)
            ;;
    	"statsSentences")
 	   ./statsSentences.sh $(cat lorem.txt) 
 	   ;;
-	"blankLinesCounter")
+        "blankLinesCounter")
            ./blankLinesCounter.sh lorem.txt
 	   ;;
 	"caseConverter")
-	   echo "$scr - is caseConverter";;
+	   ./caseConverter.sh
+	   ;;
 	"substringReplace")
 	   CAD1="ingrese la sub-cadena1:"
 	   echo $CAD1
@@ -42,8 +40,6 @@ do
            read CAD2
 	   ./substringReplace.sh $CAD1 $CAD2
 	   ;;
-	"blockSelection")
-           echo "$scr - is blockSelection";;
 	"palindromeDetection")
   	   PAL="ingrese la palabra a analizar: "
            echo $PAL

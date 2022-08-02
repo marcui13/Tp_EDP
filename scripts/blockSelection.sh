@@ -1,4 +1,5 @@
 #!/bin/bash
+
 IN=$(sed '/^$/d' lorem.txt > lorem2.txt) #---------elimina las lineas en blanco entre parrafos y guarda el contenido en un nuevo archivo.
 INPUT=$(cat lorem2.txt) #-------------guarda en la variable el contenido del archivo.
 PUNTO='([.]$)' #-----------------------REGEX: termina en punto
@@ -20,7 +21,7 @@ done
 
 #----------------------------------------------------------------------
 replace=$( tr "\n" "@" < lorem2.txt ) #identifico cada salto de linea con '@' 
-formating=("$(echo ${replace//@/ @ })") #reemplaza '@' por ' @ '
+formating=("$(echo ${replace//@/ @ })") #reemplaza '@' por ' @ ' 
 
 #--construccion de lista de oraciones separadas por parrafos-----------
 

@@ -1,6 +1,6 @@
 #!/bin/bash
-INPUT=$(cat prueba.txt)
-
+IN=$(sed '/^$/d' prueba.txt > prueba2.txt)
+INPUT=$(cat prueba2.txt)
 PUNTO='([.]$)' #-----------------------termina en punto
 
 oraciones=("Oracion numero 0!")  #-------lista con oraciones 

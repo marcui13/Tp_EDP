@@ -17,26 +17,33 @@ do
 	   ./statsWords.sh $(cat lorem.txt)
 	   ;;
         "statsUsageWords")
-           echo "$scr - is statsUsageWords";;
+           ./statsUsageWords.sh
+	   ;;
         "findNames")
-           #PAL="ingrese la palabra a analizar: "
-           #echo $PAL
-           #read PAL
            ./findNames.sh $(cat lorem.txt)
            ;;
    	"statsSentences")
 	   ./statsSentences.sh $(cat lorem.txt) 
 	   ;;
-	"blankLinesCounter")
+        "blankLinesCounter")
            ./blankLinesCounter.sh lorem.txt
 	   ;;
 	"caseConverter")
-	   echo "$scr - is caseConverter";;
+	   ./caseConverter.sh
+	   ;;
 	"substringReplace")
-	   echo "$scr - is substringReplace";;
-	"blockSelection")
-           echo "$scr - is blockSelection";;
-	"palindromeDetection")
+	   CAD1="ingrese la sub-cadena1:"
+	   echo $CAD1
+	   read CAD1
+	   CAD2="ingrese la sub-cadena2:"
+           echo $CAD2
+           read CAD2
+	   ./substringReplace.sh $CAD1 $CAD2
+	   ;;
+        "blockSelection")
+	   ./blockSelection.sh
+	   ;;
+        "palindromeDetection")
   	   PAL="ingrese la palabra a analizar: "
            echo $PAL
            read PAL

@@ -38,7 +38,7 @@ cantidad=$#
 for numero in $longPalabras
 do
 	suma=$((suma+numero))
-:done
+done
 promedio=$((suma/cantidad))
 echo "la longitud promedio es de $promedio caracteres."
 

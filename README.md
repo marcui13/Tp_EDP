@@ -125,6 +125,8 @@ Esta característica proporciona servicios y herramientas de administración par
 - Descargar la imagen del proyecto publicada en dockerhub:
 `> docker pull 1149667/tp-edp:1.0`
 
+**Verá un resultado como el siguiente:*
+
 <img src="/screens-tp/dockerpullw.PNG">
 
 **5. Build and run:**
@@ -132,10 +134,14 @@ Esta característica proporciona servicios y herramientas de administración par
 - Construya la imagen:
 `> docker build --tag 1149667/tp-edp:1.0 .`
 
+**Verá un resultado como el siguiente:*
+
 <img src="/screens-tp/dockerbuildw.PNG">
 
 - Crear el contenedor a partir de la imagen previamente construída y, acto seguido, lo pone en funcionamiento:
 
 `> docker run -it --rm 1149667/tp-edp:1.0`
+
+**Verá un resultado como el siguiente:*
 
 <img src="/screens-tp/dockerrunw.PNG">

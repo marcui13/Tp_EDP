@@ -17,10 +17,11 @@ opciones de filtrados de un texto dado, editando un Dockerfile y construyendo un
 ## Elementos en el repositorio
 
 En este repositorio están almacenados los siguientes archivos y carpetas:
-- menu.sh (es un script que al ejecutarse se muestran las opciones a elegir)
-- Dockerfile (es un archivo con las instrucciones necesarias para montar la imagen)
-- text (es una carpeta que contiene el texto a analizar)
-- scripts (es una carpeta que contiene los scripts que muestra el menú de opciones)
+- menu.sh (script que al ejecutarse se muestran las opciones a elegir)
+- Dockerfile (archivo de texto con las instrucciones necesarias para montar la imagen)
+- text (carpeta que contiene el texto a analizar)
+- scripts (carpeta que contiene los scripts que muestra el menú de opciones)
+- screens-tp (carpeta que contiene capturas de pantalla del proceso de ejecución de la app)
 
 ## Instrucciones para ejecutar la app
 

@@ -11,6 +11,6 @@ A=$1
 B=$2
 INPUT=$(cat lorem.txt) 
 
-OUTPUT=$(echo ${INPUT//$A/$B})
+OUTPUT=$(echo ${INPUT//$A/$B}) # se reemplaza la primer subcadena (primer argumento) por la segunda(segundo argumento)
 
 echo "$OUTPUT"

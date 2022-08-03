@@ -52,6 +52,7 @@ Continuemos con el proceso para ejecutar la app. Dependiendo del sistema operati
 `$ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"`
 
 - Actualice el paquete de base de datos con los paquetes de Docker del repositorio recién agregado:
+
 `$ sudo apt update`
 
 - Asegúrese de estar a punto de realizar la instalación desde el repositorio de Docker en lugar del repositorio predeterminado de Ubuntu:

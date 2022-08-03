@@ -99,3 +99,41 @@ Continuemos con el proceso para ejecutar la app. Dependiendo del sistema operati
 
 <img src="/screens-tp/dockerrun.PNG">
 
+
+### Instrucciones para Windows
+
+**1. Instalar docker**
+
+- Descargar haciendo click [aquí](https://docs.docker.com/desktop/install/windows-install/ "aquí")
+
+
+**2. Instalar “paquete de actualización del kernel de Linux”:**
+- Descargar haciendo click [aquí](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi "aquí")
+
+**3. Activar "Hyper-V en características de Windows"**
+
+<img src="/screens-tp/caractwind.PNG">
+
+Esta característica proporciona servicios y herramientas de administración para crear y ejecutar máquinas virtuales y sus recursos
+
+**Los comandos utilizados a partir de este punto, son ejecutados en una terminal de powershell, dentro del directorio clonado del repositorio de GitHub (Tp_EDP)**
+
+**4. Descargar la imagen:**
+
+- Descargar la imagen del proyecto publicada en dockerhub:
+`> docker pull 1149667/tp-edp:1.0`
+
+<img src="/screens-tp/dockerpullw.PNG">
+
+**5. Build and run:**
+
+- Construya la imagen:
+`> docker build --tag 1149667/tp-edp:1.0 .`
+
+<img src="/screens-tp/dockerbuildw.PNG">
+
+- Crear el contenedor a partir de la imagen previamente construída y, acto seguido, lo pone en funcionamiento:
+
+`> docker run -it --rm 1149667/tp-edp:1.0`
+
+<img src="/screens-tp/dockerrunw.PNG">

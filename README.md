@@ -73,17 +73,8 @@ Continuemos con el proceso para ejecutar la app. Dependiendo del sistema operati
 
 <img src="/screens-tp/dockerservice.PNG">
 
-**2. Descargar la imagen**
 
-- Descargar la imagen del proyecto publicada en dockerhub:
-`$ sudo docker pull 1149667/tp-edp:1.0`
-
-**Verá un resultado como el siguiente:*
-
-<img src="/screens-tp/dockerpullimg.PNG">
-
-
-**3. Build and Run**
+**2. Build and Run**
 
 - Construya la imagen:
 `$ sudo docker build –tag 1149667/tp-edp:1.0 .`
@@ -120,16 +111,8 @@ Esta característica proporciona servicios y herramientas de administración par
 
 **Los comandos utilizados a partir de este punto, son ejecutados en una terminal de powershell, dentro del directorio clonado del repositorio de GitHub (Tp_EDP)**
 
-**4. Descargar la imagen:**
 
-- Descargar la imagen del proyecto publicada en dockerhub:
-`> docker pull 1149667/tp-edp:1.0`
-
-**Verá un resultado como el siguiente:*
-
-<img src="/screens-tp/dockerpullw.PNG">
-
-**5. Build and run:**
+**4. Build and run:**
 
 - Construya la imagen:
 `> docker build --tag 1149667/tp-edp:1.0 .`

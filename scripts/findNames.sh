@@ -5,9 +5,9 @@
 #aunque la palabra no sea un nombre propio realmente.
 
 
-TEXTO=$@
-FORMATO='^([A-Z][a-z]{1})'  # empieza con mayusculas y sigue con minusculas
-FORMATO2='([A-Z])$'	# termina en mayusculas
+TEXTO=$@ ------ #almacena los argumentos de entrada separados por espacio
+FORMATO='^([A-Z][a-z]{1})'  #REGEX: empieza con mayusculas y sigue con minusculas
+FORMATO2='([A-Z])$'	#REGEX: termina en mayusculas
 declare -a nombres
 
 for i in $TEXTO; #-------- recorre cada palabra ingresada y la compara con los patrones establecidos en $FORMATO y $FORMATO2

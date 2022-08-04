@@ -21,7 +21,7 @@ done
 
 #----------------------------------------------------------------------
 replace=$( tr "\n" "@" < lorem2.txt ) #identifico cada salto de linea con '@' 
-formating=("$(echo ${replace//@/ @ })") #reemplaza '@' por ' @ ' 
+formating=("$(echo ${replace//@/ @ })") #reemplaza '@' por ' @ ' para que el @ no quede dentro de la palabra
 
 #--construccion de lista de oraciones separadas por parrafos-----------
 

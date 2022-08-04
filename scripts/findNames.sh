@@ -5,7 +5,7 @@
 #aunque la palabra no sea un nombre propio realmente.
 
 
-TEXTO=$@ ------ #almacena los argumentos de entrada separados por espacio
+TEXTO=$@ 		#almacena los argumentos de entrada separados por espacio
 FORMATO='^([A-Z][a-z])'  #REGEX: empieza con mayusculas y sigue con minusculas
 FORMATO2='([A-Z])$'	#REGEX: termina en mayusculas
 declare -a nombres

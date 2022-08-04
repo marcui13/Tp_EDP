@@ -6,7 +6,7 @@
 
 
 TEXTO=$@ ------ #almacena los argumentos de entrada separados por espacio
-FORMATO='^([A-Z][a-z]{1})'  #REGEX: empieza con mayusculas y sigue con minusculas
+FORMATO='^([A-Z][a-z])'  #REGEX: empieza con mayusculas y sigue con minusculas
 FORMATO2='([A-Z])$'	#REGEX: termina en mayusculas
 declare -a nombres
 
